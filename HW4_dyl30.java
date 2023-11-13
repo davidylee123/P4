@@ -82,3 +82,100 @@ public class HW4_dyl30 {
         System.out.println("\n");
     }
 }
+
+/*
+Part 1: Linear Probing
+Inserting key 14 at index 4
+empty empty empty empty 14 empty empty empty empty empty 
+
+Inserting key 17 at index 7
+empty empty empty empty 14 empty empty 17 empty empty 
+
+Inserting key 18 at index 8
+empty empty empty empty 14 empty empty 17 18 empty 
+
+Inserting key 3 at index 3
+empty empty empty 3 14 empty empty 17 18 empty 
+
+Inserting key 8 at index 9
+empty empty empty 3 14 empty empty 17 18 8 
+
+Inserting key 1 at index 1
+empty 1 empty 3 14 empty empty 17 18 8 
+
+Inserting key 18 at index 0
+18 1 empty 3 14 empty empty 17 18 8 
+
+Inserting key 11 at index 2
+18 1 11 3 14 empty empty 17 18 8 
+
+Inserting key 13 at index 5
+18 1 11 3 14 13 empty 17 18 8 
+
+Inserting key 20 at index 6
+18 1 11 3 14 13 20 17 18 8 
+
+Part 2: Double Hashing
+Inserting key 2 at index 2
+empty empty 2 empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty 
+
+Inserting key 12 at index 12
+empty empty 2 empty empty empty empty empty empty empty empty empty 12 empty empty empty empty empty empty empty 
+
+Inserting key 22 at index 8
+empty empty 2 empty empty empty empty empty 22 empty empty empty 12 empty empty empty empty empty empty empty 
+
+Inserting key 32 at index 15
+empty empty 2 empty empty empty empty empty 22 empty empty empty 12 empty empty 32 empty empty empty empty 
+
+Inserting key 42 at index 9
+empty empty 2 empty empty empty empty empty 22 42 empty empty 12 empty empty 32 empty empty empty empty 
+
+Inserting key 52 at index 16
+empty empty 2 empty empty empty empty empty 22 42 empty empty 12 empty empty 32 52 empty empty empty 
+
+Inserting key 62 at index 3
+empty empty 2 62 empty empty empty empty 22 42 empty empty 12 empty empty 32 52 empty empty empty 
+
+Inserting key 72 at index 17
+empty empty 2 62 empty empty empty empty 22 42 empty empty 12 empty empty 32 52 72 empty empty 
+
+Inserting key 82 at index 4
+empty empty 2 62 82 empty empty empty 22 42 empty empty 12 empty empty 32 52 72 empty empty 
+
+Inserting key 92 at index 18
+empty empty 2 62 82 empty empty empty 22 42 empty empty 12 empty empty 32 52 72 92 empty 
+
+Inserting key 14 at index 14
+empty empty 2 62 82 empty empty empty 22 42 empty empty 12 empty 14 32 52 72 92 empty 
+
+Inserting key 17 at index 1
+empty 17 2 62 82 empty empty empty 22 42 empty empty 12 empty 14 32 52 72 92 empty 
+
+Inserting key 18 at index 7
+empty 17 2 62 82 empty empty 18 22 42 empty empty 12 empty 14 32 52 72 92 empty 
+
+Inserting key 3 at index 11
+empty 17 2 62 82 empty empty 18 22 42 empty 3 12 empty 14 32 52 72 92 empty 
+
+Inserting key 8 at index 0
+8 17 2 62 82 empty empty 18 22 42 empty 3 12 empty 14 32 52 72 92 empty 
+
+Inserting key 1 at index 13
+8 17 2 62 82 empty empty 18 22 42 empty 3 12 1 14 32 52 72 92 empty 
+
+Inserting key 18 at index 10
+8 17 2 62 82 empty empty 18 22 42 18 3 12 1 14 32 52 72 92 empty 
+
+Inserting key 11 at index 6
+8 17 2 62 82 empty 11 18 22 42 18 3 12 1 14 32 52 72 92 empty 
+
+Inserting key 13 at index 19
+8 17 2 62 82 empty 11 18 22 42 18 3 12 1 14 32 52 72 92 13 
+
+Inserting key 20 at index 5
+8 17 2 62 82 20 11 18 22 42 18 3 12 1 14 32 52 72 92 13 
+
+Final hash table after double hashing:
+8 17 2 62 82 20 11 18 22 42 18 3 12 1 14 32 52 72 92 13 
+*/
